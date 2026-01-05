@@ -1,2 +1,10 @@
 텍스트 수정 
-ddddddd
+
+1. github.com 자신의 계정에 repository 생성(meta12)
+2. github desktop 애플리케이션을 설치하고 로그인한 후,
+3. meta12 리포지토리를 clone 해서 로컬 피씨에 서버의 저장소를 복제
+4. 이제 로컬피씨와 서버의 meta 저장소는 동기화됨
+5. 로컬피씨 meta12의 코드를 수정하면
+6. github desktop 애플리케이션에 수정사항이 보임
+7. commit -> push (pubilsh) 
+8.
