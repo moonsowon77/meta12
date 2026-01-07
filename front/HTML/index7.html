@@ -25,6 +25,7 @@
             <input type="password" id="user-password" name="password">
          </div>
          <div>
+            <!-- 아래 두 코드는 동일한 기능 수행 -->
             <!-- <input type="submit" value="로그인"> -->
             <button>로그인</button>
          </div>
@@ -57,10 +58,15 @@
         </div>
      </form>
      <div><input type="date" name="date"></div>
-     <!-- 아래 버튼모양은 submit이 아니므로 정송기능이 없음. 그냥 버튼임 -->
+     <!-- 아래 버튼모양은 submit이 아니므로 전송기능이 없음. 그냥 버튼임(input type="submit"이 전송기능) -->
      <div><input type="button" value="나는 버튼"></div>
-     <!-- button태그는 기본적으로 submit을 포함하고 있음.submit을 작성할 필요가 없음
+     <!-- button태그는 기본적으로 submit을 포함하고 있음.submit을 작성할 필요가 없음-->
      <div><button>나도 버튼</button></div>
+
+     <input type="file">
+     <input type="hidden" name="상품id" value="12345">
+     <!-- 유저가 알 필요는 없지만 폼이 알아야하는 정보가 있을 때 -->
+     <input type="text" placeholder="여기에 주소를 적어주세요" name="address">
      <br><br><br><br><br><br><br><br>
 </body>
 </html>
