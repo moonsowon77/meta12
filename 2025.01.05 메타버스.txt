@@ -48,4 +48,6 @@ class 선택자 (.class)
 soild는 선, dotted는 점선을 의미
 border 는 전체의 사각형을 의미하는데, border-left하면 왼쪽에 사각형이 생긴다
 
+<엑셀>
+
 
