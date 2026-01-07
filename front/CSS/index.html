@@ -26,6 +26,13 @@
             /* 충돌을 해결할 수 있는 최후의 수단 */
             color: blue !important;
         }
+        input[type="text"] {
+            border: 2px solid blueviolet;
+        }
+        /* input[type="text"] -> 이러면 input 전체가 아니고, input 중 타입이 텍스트인 얘만 적용 받는다 */
+        [data-custom="mystyle1"] {
+            background-color: orange;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -38,5 +45,14 @@
     <p id="id200" class="a1">id가 200입니다</p>
     <article class="a1">나는 아티클 클래스는 a1 입니다</article>
     <p class="text" style="border: 3px dotted plum;">인라인 스타일입니다 </p>
+
+    <!-- 속성 선택자 -->
+    <form>
+        <p><input type="text"></p>
+        <p><input type="password"></p>
+        <p data-custom="mystyle1">내가 만든 속성을 사용해도 됨</p>
+        <p data-custom="mystyle1">대신 data-*** 형태 권장</p>
+    </form>
+
 </body>
 </html>
