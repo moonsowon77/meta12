@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 핵심포인트
+     여기에 사용되는 문법은 서버로의 폼 전송을 목적으로 함
+     <form>와 함께 사용되는 <input>의 타입을 이해해야 함
+     input은 유저로 부터 어떤걸 원하는 지, 사용자의 정보를 받을 수 있음/폼과 인풋이 함께 사용되어야 전송이 일어난다
+     최종적으로 유저의 정보를 서버로 전달하는 동작은 <input type="submit">으로 완성됨
+      -->
     <h3>폼 태그 예제</h3>
     <form action="">
         <!-- 비어있으면 현재 페이지로 -->
@@ -24,7 +30,7 @@
      </form>
      <form action="">
         <p>주문할 상품을 선택해주세요</p>
-        <!--사용자가 선택할 뿐이기 때문에 네임과 벨류가 두 개다 있어야함, 그리고 네임은 같아야함 상품을 선택하는 것이기 때문   -->
+        <!--사용자가 선택할 뿐이기 때문에 네임과 벨류가 두 개다 있어야함, 그리고 네임은 같아야함 상품을 선택하는 것이기 때문-->
         <ul>
             <li>
                 <label><input type="checkbox" name="prod" value="s_3">선물용 3kg</label>
@@ -49,8 +55,8 @@
              <input type="reset" value="취소하기">
         </div>
      </form>
-     <form>
-        <input type="date" name="date">
-     </form>
+     <div><input type="date" name="date"></div>
+     <div><input type="button" value="나는 버튼"></div>
+     <br><br><br><br><br><br><br><br>
 </body>
 </html>
