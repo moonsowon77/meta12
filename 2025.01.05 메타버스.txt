@@ -46,5 +46,6 @@ class 선택자 (.class)
   /* 만약 *#id100.a1를 #id100. a1 -> 이렇게 띄어서 작성하는 것은 자손 선택자를 의미*/
 
 soild는 선, dotted는 점선을 의미
+border 는 전체의 사각형을 의미하는데, border-left하면 왼쪽에 사각형이 생긴다
 
 
