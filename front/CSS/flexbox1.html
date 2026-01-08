@@ -25,24 +25,42 @@
 
       /* 왼쪽 네비게이션 */
       .nav {
-        background-color: darkslategray;
+        background-color: rgb(8, 0, 49);
         position: fixed;
         left: 0;
-        width: 150px;
+        width: 200px;
         height: 1000px;
-        font-color: white;
+        color: white;
       }
 
       /* 오른쪽 전체 영역 */
       .right {
+        background-color: #b7d4e7;
+        flex: 1 ;                 /* 남은 영역 전부 차지 */
+        display: flex;
+        min-width: none;
       }
 
       /* 상단바 */
       .topbar {
+         height: 16px;               /* 고정 높이 */
+         width: 0;
+         display: flex;
+         align-items: center;        /* 세로 중앙 정렬 */
+         padding: 0 16px;
+         background-color: #4a545c;
+         color: #fff;
+         flex-shrink: 0;             /* 줄어들지 않게 */
       }
 
       /* 콘텐츠 영역 */
       .content {
+        background-color: #b7d4e7;
+        left: 250px;
+        flex: 1;
+        display: flex;
+        gap: 16px;
+        padding: 120px;
       }
 
       /* 메인 콘텐츠 */
