@@ -9,17 +9,22 @@
             display: flex;
             /* 자식들을 가로정렬시킨다 */
             /* flex-direction: row; */
+            /* gap: 20px; */
+            /* 내부에 있는 아이템들끼리 간격을 유지하게 함 */
         }
         .sidebar {
             background-color: #f0f0f0;
             /* flex-grow: 1;*/
-            flex: 0 0 200px;
+            /* 고정 가로 넓이 200 */
+            flex: 1;
         }
         .main {
             background-color: lightblue;
             /* flex-grow: 1; */
             /* flex-grow는 화면에 맞게 확장을 시키는 역할, 기본값이 0임 */
-            flex: 1;
+            flex: 3;
+            /* flex : 1 1 0 을 의마함 */
+            /* flex는 앞의 플레스에 맞춰서 특징을 갖는다 만약 앞에가 flex=1이었다?하면 지금은 사이드바의 2배의 길이라고 해석 */
         }
     </style>
 </head>
