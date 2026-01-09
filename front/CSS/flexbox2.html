@@ -18,8 +18,8 @@
 
       /* 전체 페이지 */
       .page {
-        display: flex; /* 가로정렬 */
-        flex-direction: column;
+        display: flex; 
+        flex-direction: column;/* 세로정렬 */
         height: 100%
       }
 
@@ -27,7 +27,7 @@
       .header {
         background-color: navy;
         color: white;
-        height: 80px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,8 +43,9 @@
       /* 사이드 메뉴 */
       .sidebar {
         background-color: rgb(47, 47, 199);
-        width: 220px;
+        width: 200px;
         color: white;
+        padding: 20px;
       }
 
       /* 콘텐츠 영역 */
@@ -54,26 +55,27 @@
         flex: 1; 
         gap: 15px;
         padding: 20px;
+        background-color: #ecf0f1;
       }
 
       /* 본문 */
       .article {
         background-color: white;
-        flex: 3;
+        flex: 2;
         padding: 20px;
       }
 
       /* 이벤트 광고 */
       .event {
         background-color: rgb(236, 205, 24);
-        flex: 1.5;
+        flex: 1;
         padding: 20px;
       }
 
       /* 로그인 창 */
       .login {
         background-color: aqua;
-        flex: 1.5;
+        flex: 1;
         padding: 20px;
       }
 
@@ -81,10 +83,11 @@
       .footer {
         background-color: navy;
         color: white;
-        height: 60px;
+        padding: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* 텍스트 얼라인은 글씨 가로정렬 -> 써도됨!! */
       }
     </style>
   </head>
