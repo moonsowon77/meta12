@@ -12,72 +12,76 @@
       }
 
       body {
-        height: 100vh;
-        margin: 10;
-        padding: 10;
+        height: 100vh; /* 화면높이 전체 */
+        font-family: sans-serif; 
       }
 
       /* 전체 대시보드 */
       .dashboard {
-        display: flex;
-        flex-direction: row;
+        display: flex; /* 가로정렬 */
+        height: 100%; /* 부모가 100vh(화면 높이 전체)를 차지하므로 그 공간을 100% 사용하겠다 */
       }
 
       /* 왼쪽 네비게이션 */
       .nav {
-        background-color: rgb(8, 0, 49);
-        position: fixed;
-        left: 0;
-        width: 200px;
-        height: 1000px;
+        background-color: #1e272e;
+        /* flex: 0 0 220px; --> 이렇게 플렉스 안해도 width해도 똑같다 */
+        width: 220px;
         color: white;
+        padding: 20px;
+        /* 패딩의 기준점은 왼쪽위임 */
       }
 
       /* 오른쪽 전체 영역 */
       .right {
-        background-color: #b7d4e7;
-        flex: 1 ;                 /* 남은 영역 전부 차지 */
         display: flex;
-        min-width: none;
+        flex-direction: column; /* 가로정렬 하지마 */
+        flex: 1; /* flex: 1 1 0 -> 확장, 축소하고 베이스 크기는 0(컨텐츠 크기만큼)-> 기본 사이즈가 없기때문에 자기 글씨만큼만 영역가짐 */
       }
 
       /* 상단바 */
       .topbar {
-         height: 16px;               /* 고정 높이 */
-         width: 0;
-         display: flex;
-         align-items: center;        /* 세로 중앙 정렬 */
-         padding: 0 16px;
-         background-color: #4a545c;
-         color: #fff;
-         flex-shrink: 0;             /* 줄어들지 않게 */
+        background-color: #485460;
+        height: 60px;
+        /* 비율로 안가지고 60만 가질게 */
+        padding: 20px;
+        color: white;
       }
 
-      /* 콘텐츠 영역 */
+      /* 콘텐츠 영역 - 메인콘텐츠와 서브 패널의 부모*/
       .content {
-        background-color: #b7d4e7;
-        left: 250px;
-        flex: 1;
         display: flex;
-        gap: 16px;
-        padding: 120px;
+        background-color: #d2dae2;
+        flex: 1; 
+        gap: 15px;
+        /* 상자와 상자 사이 */
+        padding: 20px;
+        /* 벽하고의 떨어져있는 거리 */
       }
 
       /* 메인 콘텐츠 */
       .main-content {
+        background-color: white;
+        flex: 3;
+        padding: 20px;
       }
 
       /* 서브 패널 */
       .side-panel {
+        background-color: #ffa801;
+        flex: 1;
+        padding: 20px;
       }
 
       /* 하단 정보바 */
       .status {
+        background-color: #808e9b;
+        height: 60px;
+        color: white;
+        /* <아래3줄> 가운데 배치시키는 공식 */
         display: flex;
-        flex: 1;
-        background-color: #b7d4e7;
-        padding: 100px;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -91,9 +95,8 @@
         <main class="content">
           <section class="main-content">메인 콘텐츠 (차트 / 목록)</section>
 
-          <aside class="side-panel">서브 패널 (알림 / 요약)</aside>
+          <aside class="side-panel">서브 패널 (알림 / 요약)</aside> <!-- div도 상관없음 -->
         </main>
-
         <footer class="status">하단 정보바</footer>
       </div>
     </div>
